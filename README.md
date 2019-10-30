@@ -1,2 +1,5 @@
-# python_script_tools
-some python scripts to make your life easier
+# 一些python脚本小工具
+
+1. imgs2pdf  
+批量将图片转换成pdf
+dependency：python2或python3，PIL
