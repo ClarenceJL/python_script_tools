@@ -2,4 +2,4 @@
 
 1. imgs2pdf  
 批量将图片转换成pdf  
-dependency：python2或python3，PIL
+dependency：PIL (pip install pillow)  
