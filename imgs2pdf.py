@@ -67,7 +67,11 @@ def combine_imgs_to_pdf(imgs_path, output_path, resolution=100, img_size=None):
         return
 
     # todo: filter illegal images
-    fname.sort()
+    
+    # sort image by name
+    fid = [int(''.join(c for c in s if c.isdigit())) for s in fname]
+    forder = sorted(range(len(fid)), key=lambda k: fid[k])
+    fname = [fname[i] for i in forder]
 
     # attach images to pdf file
     # todo: resize image if required
